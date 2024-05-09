@@ -11,7 +11,7 @@ function enviarFormulario(evento) {
     const politicas = document.getElementById('politicasdeprivacidad').checked;
 
     // Validar los campos del formulario y enviar sino un mensaje de alerta
-    if (nombre !== '' && apellido !== '' && correo !== '' && telefono && mensaje !== '' && politicas && document.getElementById('paisUsuario').value !== 'selected') {
+    if (nombre !== '' && apellido !== '' && correo !== '' && telefono && mensaje !== '' && politicas && document.getElementById('paisUsuario').value !== '') {
         alert('Formulario enviado correctamente.');
         document.querySelector('form').reset(); // Limpiar el formulario después del envío  
     } else {

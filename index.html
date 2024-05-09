@@ -7,8 +7,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="UTF-8" />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
       rel="stylesheet"
@@ -513,12 +511,12 @@
             </div>
             <div>
               <label for="telUsuario">Teléfono</label>
-              <input type="tel" id="telUsuario" name="telUsuarioIngresado" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1"/>
+              <input type="tel" id="telUsuario" name="telUsuarioIngresado" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" />
             </div>
             <div>
               <label for="paisUsuario">País de residencia</label>
               <select id="paisUsuario" name="paisUsuarioIngresado" required>
-                <option value="selected">--- Seleccione un país ---</option>
+                <option value="">--- Seleccione un país ---</option>
                 <option value="AR">Argentina</option>
                 <option value="CO">Colombia</option>
                 <option value="VE">Venezuela</option>
