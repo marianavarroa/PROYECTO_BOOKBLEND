@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+    <title>Book Blend</title>
+
+    <link rel="icon" href="./imagenes/LOGOFAVICO.ico" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./CSS/stylePagina.css"/>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#9cd2d3;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./imagenes/logo1.png" alt="imagen del logo bookblend">
+            </a>
+            <button class="navbar-toggler" id="button-burg" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#quienes">¿Quiénes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#libros">Libros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#preguntas-frecuentes">Preguntas frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item" id="btn-inicio-sesion">
+                        <a class="nav-link" href="./ventlogin.html#inicio-sesion">Iniciar sesión</a>
+                    </li>
+                    <li class="nav-item" id="btn-suscripcion">
+                        <a class="nav-link" href="./ventlogin.html#suscripcion">Suscribirse</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div>
+            <section id="carruselpp">
+                <div class="carousel-containerpp">
+                    <div class="carousel-pp">
+                        <div class="carousel-itempp">
+                            <img src= "./imagenes/1.png" alt="Empieza tu aventura literaria hoy mismo">
+                        </div>
+                        <div class="carousel-itempp">
+                            <a href="./ventlogin.html"></a>
+                            <img src= "./imagenes/2.png" alt="suscripcion gratiuta por 7 dias">
+                        </div>
+                        <div class="carousel-itempp">
+                            <img src="./imagenes/3.png" alt="Puede cancelar la suscrpcion en cualquier momento">
+                        </div>
+                    </div>
+                    <div class="prev-nextpp">
+                        <button id="prevBtn" class="previ">&#10094;</button>
+                        <button id="nextBtn" class="sigu">&#10095;</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section id="quienes">
+            <div class="container-quienes">
+                <div class="mainImg">
+                    <img src="./imagenes/quienesomos.png" alt="imagen orientativa" />
+                </div>
+                <div class="mainText">
+                    <h2 class="quieneSomos">¿Quiénes somos?</h2>
+                    <p>
+                        En BookBlend somos unos apasionados por la lectura en todos sus
+                        formatos.
+                        Estamos encantados de presentar nuestra plataforma de suscripción y
+                        venta online de libros.
+                        on ella, ofrecemos a nuestros clientes una solución completa para el
+                        aprendizaje y desarrollo,
+                        con acceso a una amplia selección de libros electrónicos.
+                        Nuestro objetivo es brindar un servicio eficiente y amigable,
+                        asegurando que cada cliente encuentre lo que necesita para crecer
+                        personal y profesionalmente.
+                        ¡Juntos, estamos comprometidos a promover el éxito a través del
+                        conocimiento y la lectura!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="libros">
+            <div id="container_izq">
+                <div class="contenido">
+                    <h2>Libros</h2>
+                    <p>En Book Blend, nuestra pasión por la lectura es más que una simple afición, es una forma de vida.
+                        Nos sumergimos en el vasto océano de la literatura con entusiasmo y dedicación, siempre en
+                        búsqueda de nuevas joyas literarias que despierten nuestros sentidos y enriquezcan nuestra
+                        mente.<br><br>
+                        Nos consideramos exploradoras incansables del mundo de las letras, siempre en la búsqueda de
+                        nuevos autores que aporten un soplo de aire fresco al panorama literario con su estilo
+                        distintivo y su voz única. Valoramos la creatividad y la originalidad, y nos emociona descubrir
+                        aquellos talentos emergentes que irrumpen en escena con una fuerza creativa arrolladora.<br><br>
+                        En Book Blend, nos enorgullece no solo compartir nuestra pasión por los libros, sino también
+                        crear un espacio donde los amantes de la literatura pueden conectarse, compartir ideas y
+                        descubrir juntos el maravilloso mundo de la lectura. Desde los clásicos intemporales que han
+                        resistido el paso del tiempo hasta las emocionantes novedades que marcan el pulso de la
+                        literatura contemporánea, nuestra selección de libros está cuidadosamente curada para satisfacer
+                        todos los gustos y satisfacer todas las ansias de conocimiento y aventura literaria.</p>
+                </div>
+            </div>
+            <div id="container_der">
+                <h4>Suscripciones anteriores</h4>
+                <div class="libros_anteriores">
+                    <div class="libro" onclick="showResumen(this)">
+                        <img src="./imagenes/nuestra_parte_de_noche.jpg" alt="Portada del libro 1">
+                        <p class="item_title">Nuestra parte de noche</p>
+                        <span class="autor">Mariana Enriquez</span>
+                        <p class="reseña" style="display: none;">La novela se centra en la convivencia entre lo
+                            histórico y lo
+                            sobrenatural, y la construcción de los personajes es excepcional. <br>
+                            La historia se desarrolla en torno a una secta regida por lo que llaman la Oscuridad. <br>
+                            A través de la narrativa, Enriquez inventa puertas para que el lector las abra, entre el
+                            sigilo y el
+                            estupor. Desde las vidas comunes de algunos personajes comienzan a aparecer sitios o escenas
+                            que
+                            invitan a la extrañidad, pero también a las más espeluznantes pesadillas y luego al horror
+                            que
+                            convierte al lenguaje en experiencia de lo indecible. <br>
+                            La novela también aborda aspectos de la dictadura militar argentina, aunque no es el tema
+                            central.
+                            <br>
+                            A través de la historia, se exploran temas de ocultismo, extravío macabro y la tensión entre
+                            lo que
+                            parece real y lo que se adivina como siniestro. <br>
+                            En resumen, “Nuestra parte de noche” es una obra que desafía las convenciones del género y
+                            ofrece
+                            una lectura profunda y cautivadora.
+                        </p>
+                    </div>
+                    <div class="libro" onclick="showResumen(this)">
+                        <img src="./imagenes/cometierra.jpg" alt="Portada del libro 2">
+                        <p class="item_title">Cometierra</p>
+                        <span class="autor">Dolores Reyes</span>
+                        <p class="reseña" style="display: none;">La historia es narrada por una joven huérfana conocida
+                            como
+                            Cometierra, quien tiene el poder de conectar con víctimas femeninas desaparecidas al comer
+                            un poco
+                            de tierra que ha tenido contacto con la víctima. <br>
+                            A lo largo de la historia, Cometierra usa su don para ayudar a encontrar a mujeres
+                            desaparecidas,
+                            ingiriendo tierra de la casa de la persona desaparecida para tener visiones y poder
+                            encontrarla.
+                            Aunque la novela aborda temas de femicidios y trata de blancas, también se centra en cómo
+                            Cometierra
+                            percibe su vida como vidente y huérfana, y cómo crece y enfrenta las cosas de manera
+                            diferente a
+                            como lo hacía de niña. <br>
+                            La novela es visual y sensorial, con una estructura parecida a la novela policíaca, con
+                            Cometierra
+                            resolviendo un caso tras otro. Además, la obra es reconocida por su cruda descripción de la
+                            realidad
+                            social y la presencia de lo sobrenatural. <br>
+                            En resumen, “Cometierra” es una obra que logra entrelazar magistralmente diferentes géneros
+                            literarios y elementos temáticos, ofreciendo una historia que impacta por su cruda
+                            descripción de la
+                            realidad social y la presencia de lo sobrenatural.
+                        </p>
+                    </div>
+                    <div class="libro" onclick="showResumen(this)">
+                        <img src="./imagenes/la_ultima_actriz.jpg" alt="Portada del libro 3">
+                        <p class="item_title">La última actríz</p>
+                        <span class="autor">Tamara Tenenbaum</span>
+                        <p class="reseña" style="display: none;">La historia se centra en dos mujeres de diferentes
+                            épocas,
+                            explorando la identidad femenina a través del tiempo y la memoria. <br>
+                            La protagonista, Sabrina, es una estudiante de Artes que, impulsada por su director de tesis
+                            y
+                            amante, Gabriel, decide investigar las huellas del teatro judío en Argentina. Para ello,
+                            recurre a
+                            Jaim, un viejo profesor que le sugiere revisar los restos de los archivos de la AMIA, la
+                            mutual que
+                            sufrió un atentado terrorista en 1994. <br>
+                            En su investigación, Sabrina descubre el diario de Jana, una actriz del teatro ídish en
+                            Buenos Aires
+                            en la década de 1960. A medida que avanza en su investigación, Sabrina se obsesiona con
+                            seguir las
+                            huellas de Jana, hasta el punto de que todo lo demás en su vida, incluyendo su familia, su
+                            carrera
+                            académica y su relación con Gabriel, pasa a un segundo plano. <br>
+                            La novela es reconocida por su inteligencia narrativa excepcional, con dos personajes
+                            femeninos
+                            perturbadores y una trama tan elusiva como hipnótica. Trata temas como ser mujer, el deseo y
+                            la
+                            realización, el mito del díbuk y la posesión del cuerpo, la tradición y la modernidad, la
+                            ciudad de
+                            Buenos Aires y la búsqueda de una clave existencial entre un montón de papeles quemados.
+                            <br>
+                            En resumen, “La última actriz” es una obra que logra entrelazar magistralmente diferentes
+                            géneros
+                            literarios y elementos temáticos, ofreciendo una historia que impacta por su cruda
+                            descripción de la
+                            realidad social y la presencia de lo sobrenatural.
+                        </p>
+                    </div>
+                    <div class="libro" onclick="showResumen(this)">
+                        <img src="./imagenes/la_infancia_del_mundo.jpg" alt="Portada del libro 4">
+                        <p class="item_title">La infancia del mundo</p>
+                        <span class="autor">Michel Nieva</span>
+                        <p class="reseña" style="display: none;">La historia se desarrolla en el siglo XXIII, en un
+                            mundo
+                            transformado por el cambio climático. <br>
+                            El protagonista de la historia es un niño mutante conocido como “el niño dengue”, que es
+                            testigo de
+                            un mundo en el que la élite en el poder ha terraformado el planeta para su bienestar y
+                            enriquecimiento, mientras que el resto de la población vive en la más brutal precariedad. El
+                            niño
+                            dengue descubre que su nacimiento es producto de un experimento corporativo sobre capas
+                            marginales
+                            de la sociedad con el fin de especular sobre el mercado de "virofinanzas". <br>
+                            La novela es reconocida por su crítica feroz a la influencia desmedida de las corporaciones
+                            y su
+                            búsqueda incesante de ganancias a expensas de la humanidad. <br>
+                            En resumen, “La infancia del mundo” es una obra que ofrece una mirada ciberpunk planteando
+                            una
+                            crítica a ciertos rasgos del capitalismo global contemporáneo como el cambio climático, la
+                            especulación financiera y la industria farmacéutica, el extractivismo, la gentrificación, e
+                            incluso
+                            la violencia infantil y la desigualdad social.
+                        </p>
+                    </div>
+                    <div class="libro" onclick="showResumen(this)">
+                        <img src="./imagenes/las_indignas.jpg" alt="Portada del libro 5">
+                        <p class="item_title">Las indignas</p>
+                        <span class="autor">Agustina Bazterrica</span>
+                        <p class="reseña" style="display: none;">La historia se desarrolla en un mundo
+                            post-apocalíptico,
+                            después de una serie de catástrofes ambientales. <br>
+                            La trama gira en torno a un grupo de mujeres que viven en una especie de convento, bajo el
+                            control
+                            de una secta religiosa. Estas mujeres son sometidas a torturas, sacrificios y ceremonias
+                            terroríficas en nombre de la iluminación. Son vigiladas por la Hermana Superior y un
+                            misterioso
+                            personaje conocido solo como "Él". <br>
+                            La narradora es una de estas mujeres, que escribe en secreto sobre lo que sucede dentro del
+                            convento. A través de su relato, Bazterrica explora temas como el patriarcado, el abuso de
+                            poder y
+                            la amistad. <br>
+                            La novela es reconocida por su narrativa truculenta, que logra enmascarar con cierto
+                            lirismo. “Las
+                            indignas” ofrece una visión perturbadora de un futuro distópico.
+                        </p>
+                    </div>
+                    <div class="libro" onclick="showResumen(this)">
+                        <img src="./imagenes/las_niñas_del_naranjel.jpg" alt="Portada del libro 6">
+                        <p class="item_title">Las niñas del naranjel</p>
+                        <span class="autor">Gabriela Cabezón Cámara</span>
+                        <p class="reseña" style="display: none;">La historia se basa en la vida de Catalina de Erauso,
+                            una
+                            novicia del convento de Donostia, España, en el siglo XVI, que a los 15 años huye y termina
+                            en
+                            América convertida en Antonio, un alférez. <br>
+                            La trama se desarrolla en un mundo post-apocalíptico, después de una serie de catástrofes
+                            ambientales. Antonio, junto con dos niñas guaraníes, Mitakuña y Michí, y algunos animales,
+                            se
+                            interna en la selva. Mientras las protege, les cuenta variadas historias al igual que hace
+                            con su
+                            tía (priora del convento del que escapó), mediante una larga carta en la que le (nos) cuenta
+                            qué fue
+                            de su vida durante casi treinta años y le pide perdón por haberla abandonado. <br>
+                            La novela es reconocida por su crítica social, especialmente referida a la colonización
+                            española.
+                            Además, aborda temas como la identidad sexual y la soledad del ser humano. La narración y la
+                            poesía
+                            se imbrican de un modo admirable, creando una polifonía digna de mencionar.
+                        </p>
+                    </div>
+                    <div class="libro" onclick="showResumen(this)">
+                        <img src="./imagenes/la_llamada.JPG" alt="Portada del libro 7">
+                        <p class="item_title">La llamada</p>
+                        <span class="autor">Leila Guerriero</span>
+                        <p class="reseña" style="display: none;">La obra es un retrato de la vida de Silvia Labayru, una
+                            argentina que en su adolescencia era tímida, lectora, amante de los animales y entusiasta de
+                            John F.
+                            Kennedy. A los trece años, ingresó en el Colegio Nacional Buenos Aires, donde entró en
+                            contacto con
+                            agrupaciones estudiantiles de izquierda y se transformó en una militante aguerrida. <br>
+                            En marzo de 1976, embarazada de cinco meses y con veinte años, Labayru integraba el sector
+                            de
+                            Inteligencia de la organización Montoneros, un grupo armado de extracción peronista. Fue
+                            secuestrada
+                            por militares y trasladada a la ESMA, la Escuela de Mecánica de la Armada, donde funcionaba
+                            un
+                            centro de detención clandestino en el cual se torturó y asesinó a miles de personas. Allí
+                            tuvo a su
+                            hija que, una semana más tarde, fue entregada a los abuelos paternos. <br>
+                            En la ESMA, Labayru fue torturada, obligada a realizar trabajo esclavo, violada
+                            reiteradamente por
+                            un oficial y forzada a representar el papel de hermana de Alfredo Astiz, un miembro de la
+                            Armada que
+                            se había infiltrado en la organización Madres de Plaza de Mayo. La liberaron en junio de
+                            1978 y en
+                            el avión rumbo a Madrid, junto a su hija de un año y medio, pensó: «Se acabó el infierno».
+                            Pero el
+                            infierno no había terminado. <br>
+                            Los argentinos en el exilio la repudiaron, acusándola de traidora a raíz de la desaparición
+                            de las
+                            Madres. Abominada por quienes habían sido sus compañeros de militancia, arropada por unos
+                            pocos
+                            amigos fieles exiliados en Europa, hizo una vida. <br>
+                            Guerriero entrevistó durante dos años, de 2021 a 2023, a Silvia Labayru, antigua integrante
+                            del
+                            grupo armado de extracción peronista Montoneros. Con retazos de conversaciones,
+                            transcripciones de
+                            testimonios judiciales, telegramas, emails y poemas, Guerriero realiza un trabajo formidable
+                            al
+                            desgranar cada elemento y situarlo en el lugar exacto que le corresponde para construir un
+                            engranaje
+                            robusto con piezas sueltas. <br>
+                            Es una historia real, llena de aristas y sombras, sobre la condición humana. Un gran mosaico
+                            que,
+                            visto en conjunto, ofrece una imagen definida y equilibrada de la época, de las
+                            circunstancias y de
+                            la protagonista.
+                        </p>
+                    </div>
+                    <div class="libro" onclick="showResumen(this)">
+                        <img src="./imagenes/soy_una_tonta_por_quererte.jpg" alt="Portada del libro 8">
+                        <p class="item_title">Soy una tonta por quererte</p>
+                        <span class="autor">Camila Sosa Villada</span>
+                        <p class="reseña" style="display: none;">Este libro consta de nueve relatos que exploran la fina
+                            línea
+                            que separa la realidad de lo prodigioso. <br>
+                            Los relatos están habitados por personajes extravagantes y profundamente humanos que se
+                            enfrentan de
+                            maneras tan extrañas como ellos mismos a una realidad ominosa. Algunos de los relatos
+                            incluyen: <br>
+                            - Una mujer que se gana la vida como novia de alquiler de hombres gays en la década de los
+                            años 90.
+                            <br>
+                            - En un fumadero de Harlem, una travesti latina conoce íntimamente nada menos que a Billie
+                            Holiday.<br>
+                            - Un grupo de rugbiers regatea el precio de una noche de sexo y a cambio recibe su merecido.
+                            <br>
+                            - Monjas, abuelas, niños y perros nunca son lo que parecen.<br>
+                            Camila Sosa Villada, autora del libro, es reconocida por su capacidad para hablar la lengua
+                            de una
+                            víctima de la inquisición mexicana y construir un universo distópico donde la existencia
+                            travesti se
+                            toma su revancha. <br>
+                            El estilo único, la autora, franquea los límites entre la realidad y la magia en estos
+                            cuentos,
+                            honrando la tradición oral con soltura y solidez inigualables.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div id="modalTitle" class="item_title"></div>
+                <div id="modalContent" class="modal-description"></div>
+            </div>
+        </div>
+        <section id="preguntas-frecuentes">
+            <h4>Preguntas Frecuentes</h4>
+            <div class="contenedor-acordeon">
+                <div class="acordeon">
+                    <input type="radio" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
+                    <label for="btn-acordeon1">
+                        ¿Qué es Book Blend?
+                    </label>
+                    <div class="contenido-acordeon">
+                        <p>Book Blend es un servicio de suscripción de libros que te ofrece una selección personalizada
+                            de
+                            libros basada en tus intereses y preferencias de lectura. Con Book Blend, puedes descubrir
+                            nuevas lecturas emocionantes y disfrutar de una experiencia de lectura única.</p>
+                    </div>
+                </div>
+                <div class="acordeon">
+                    <input type="radio" name="acordeon" id="btn-acordeon2" class="btn-acordeon">
+                    <label for="btn-acordeon2">
+                        ¿Cómo me puedo suscribir?
+                    </label>
+                    <div class="contenido-acordeon">
+                        <p>Para suscribirte a Book Blend, simplemente visita nuestra página web y haz clic en el botón
+                            de
+                            suscripción. Luego, sigue los pasos indicados para crear tu cuenta y seleccionar tu plan de
+                            suscripción. Una vez completado el proceso de suscripción, podrás empezar a disfrutar de
+                            nuestros libros seleccionados especialmente para ti.</p>
+                    </div>
+                </div>
+                <div class="acordeon">
+                    <input type="radio" name="acordeon" id="btn-acordeon3" class="btn-acordeon">
+                    <label for="btn-acordeon3">
+                        ¿Cómo cancelo mi suscripción?
+                    </label>
+                    <div class="contenido-acordeon">
+                        <p>Para cancelar tu suscripción a Book Blend, simplemente inicia sesión en tu cuenta y dirígete
+                            a la
+                            sección de configuración o ajustes. Allí encontrarás la opción para cancelar tu suscripción.
+                            Sigue las instrucciones proporcionadas y tu suscripción será cancelada de manera efectiva.
+                            Ten
+                            en cuenta que al cancelar tu suscripción, perderás acceso a nuestra biblioteca de libros.
+                        </p>
+                    </div>
+                </div>
+                <div class="acordeon">
+                    <input type="radio" name="acordeon" id="btn-acordeon4" class="btn-acordeon">
+                    <label for="btn-acordeon4">
+                        ¿Hacen envíos a todo el país?
+                    </label>
+                    <div class="contenido-acordeon">
+                        <p>Sí, hacemos envíos a todo el país. Nuestro servicio de entrega está disponible en todas las
+                            regiones, lo que te permite recibir tus libros en la comodidad de tu hogar,
+                            independientemente
+                            de dónde te encuentres en el país. Trabajamos con servicios de mensajería confiables para
+                            garantizar que tus libros lleguen a tiempo y en perfectas condiciones.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+            <h4>contacto</h4>
+            <div class="container">
+                <form action="#" method="post" onsubmit="enviarFormulario(event)">
+                    <div>
+                        <label for="nombreUsuario">Nombre</label>
+                        <input type="text" id="nombreUsuario" name="nombreUsuarioIngresado">
+                    </div>
+                    <div>
+                        <label for="apellidoUsuario">Apellido</label>
+                        <input type="text" id="apellidoUsuario" name="apellidoUsuarioIngresado">
+                    </div>
+                    <div>
+                        <label for="emailUsuario">E-mail</label>
+                        <input type="email" id="emailUsuario" name="emailUsuarioIngresado">
+                    </div>
+                    <div>
+                        <label for="telUsuario">Teléfono(opcional)</label>
+                        <input type="tel" id="telUsuario" name="telUsuarioIngresado">
+                    </div>
+                    <div>
+                        <label for="paisUsuario">País de residencia</label>
+                        <select id="paisUsuario" name="paisUsuarioIngresado">
+                            <option value="selected">--- Seleccione un país ---</option>
+                            <option value="AR">Argentina</option>
+                            <option value="CO">Colombia</option>
+                            <option value="VE">Venezuela</option>
+                            <option value="PE">Peru</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="7"></textarea>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="politicasdeprivacidad" name="politicasdeprivacidad" value="1">
+                        <label for="politicasdeprivacidad"> Acepto la<a href="./politicasdeprivacidad.html">Politica
+                                de privacidad</a>de esta web.</label>
+                    </div>
+                    <input type="submit" value="ENVIAR">
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="logoFooter">
+                <img src="./imagenes/logo1.png" alt="logo de bookblent" />
+            </div>
+            <div class="accesoRapido">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./terminosycondiciones.html">Términos y condiciones</a></li>
+                    <li><a href="./index.html#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="logoRedes">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="./imagenes/facebooklogo.jpg" alt="FacebookLogo" />
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <img src="./imagenes/instagramlogo.jpg" alt="InstagramLogo" />
+                </a>
+                <a href="https://twitter.com/" target="_blank">
+                    <img src="./imagenes/twitterlogo.jpg" alt="TwitterLogo" />
+                </a>
+            </div>
+            <p class="copy">
+                BookBlend Copyright &copy; 2023. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+    <!-- FIN FOOTER -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./JS/popup.js"></script>
+    <script src="./JS/formulario.js"></script>
+    <script src="./JS/scroll.js"></script>
+    <script src="./JS/inse.js"></script>
+    <script src="./JS/carrusel.js"></script>
+    <script src="./JS/acordeon.js"></script>
+</body>
+</html>
