@@ -12,25 +12,25 @@
 
     <body>
       <header>
-        <h1>Book Blend</h1>
+        <a href="/index.html"><h1>Book Blend</h1></a>
       </header>
       <main>
         <section id="suscripcion">
           <section id="contacto">
-            <h2>Suscripcion</h2>
+            <h2>Suscripción</h2>
             <div class="container">
               <form id="form-suscripcion">
                 <div>
-                  <label for="nombre">Nombre:</label>
-                  <input type="text" id="nombreSuscriptor" name="nombreSuscriptorIngresado">
+                  <label for="nombre">Nombre y apellido:</label>
+                  <input type="text" id="nombreSuscriptor" name="nombreSuscriptorIngresado" required>
                 </div>
                 <div>
-                  <label for="email">Correo Electrónico:</label><br>
+                  <label for="email">E-mail:</label><br>
                   <input type="email" id="emailSuscriptor" name="emailSuscriptor" required><br>
                 </div>
                 <div>
-                  <label for="tarjeta">Número de Tarjeta:</label><br>
-                  <input type="text" id="tarjetaSuscritor" name="tarjetaSuscriptor" required><br><br>
+                  <label for="tarjeta">Número de tarjeta:</label><br>
+                  <input type="text" id="tarjetaSuscritor" name="tarjetaSuscriptor" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" min="1" required><br><br>
                 </div>
                 <div>
                   <label for="plan">Selecciona un plan:</label><br>
@@ -43,7 +43,7 @@
                 </div>
                 <div>
                   <input type="checkbox" id="politicasdeprivacidad" name="politicasdeprivacidad" value="1">
-                  <label for="politicasdeprivacidad"> Acepto la<a href="./politicasdeprivacidad.html">Politica
+                  <label for="politicasdeprivacidad"> Acepto la<a href="./politicasdeprivacidad.html">Política
                       de privacidad</a>de esta web.
                   </label>
                 </div>
@@ -57,7 +57,7 @@
           <div class="container">
             <form id="form-login">
               <div>
-                <label for="email_login">Correo Electrónico:</label><br>
+                <label for="email_login">E-mail:</label><br>
                 <input type="email" id="email_login" name="email_login" required><br>
               </div>
               <div>
@@ -90,7 +90,7 @@
               <img src="./imagenes/twitterlogo.jpg" alt="TwitterLogo" /></a>
           </div>
           <p class="copy">
-            BookBlend Copyright &copy; 2023. All Rights Reserved.
+            Book Blend Copyright &copy; 2023. All Rights Reserved.
           </p>
         </div>
       </footer>

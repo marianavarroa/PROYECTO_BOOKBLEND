@@ -10,13 +10,13 @@ document.getElementById('form-suscripcion').addEventListener('submit', function(
 
         switch(planSeleccionado) {
             case "basico":
-                mensaje = "Te has suscrito al Plan Básico. ¡Bienvenido!";
+                mensaje = "Te has suscripto al Plan Básico. ¡Bienvenido!";
                 break;
             case "estandar":
-                mensaje = "Te has suscrito al Plan Estándar. ¡Bienvenido!";
+                mensaje = "Te has suscripto al Plan Estándar. ¡Bienvenido!";
                 break;
             case "premium":
-                mensaje = "Te has suscrito al Plan Premium. ¡Bienvenido!";
+                mensaje = "Te has suscripto al Plan Premium. ¡Bienvenido!";
                 break;
             default:
                 alert("Por favor selecciona un plan de suscripción.");

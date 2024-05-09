@@ -94,6 +94,8 @@ nav {
 
 #button-burg {
   margin: 5%;
+  border-color: rgba(68, 68, 68, 0.745);
+  padding-bottom: 7px;
 }
 
 div.container {
@@ -383,8 +385,18 @@ main div.container-quienes {
   font-size: 14px;
 }
 
+.item_title{
+  font-weight: bolder;
+}
+
+
 .libro .item_title {
   font-weight: 'Libre Baskerville', serif;
+}
+
+span.autor{
+  font-size: 11px;
+  font-style: italic;
 }
 
 .libro .autor {
@@ -884,5 +896,22 @@ h4 {/* todos los textos h4 */
 
   footer a img {
     margin: 5px;
+  }
+}
+
+@media screen and (max-width: 955px){
+  .libros_anteriores{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 431px){
+  .libros_anteriores{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 1199px){
+  .libros_anteriores{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

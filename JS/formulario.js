@@ -11,13 +11,15 @@ function enviarFormulario(evento) {
     const politicas = document.getElementById('politicasdeprivacidad').checked;
 
     // Validar los campos del formulario y enviar sino un mensaje de alerta
-    if (nombre !== '' && apellido !== '' && correo !== '' && telefono && mensaje !== '' && politicas) {
+    if (nombre !== '' && apellido !== '' && correo !== '' && telefono && mensaje !== '' && politicas && document.getElementById('paisUsuario').value !== 'selected') {
         alert('Formulario enviado correctamente.');
-        document.querySelector('form').reset(); // Limpiar el formulario después del envío
+        document.querySelector('form').reset(); // Limpiar el formulario después del envío  
     } else {
         alert('Por favor, complete todos los campos obligatorios correctamente y acepte la política de privacidad.');
     }
 }
+
+
 
 function detectarEnvioFormulario() {
     const formulario = document.querySelector('form');
