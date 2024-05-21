@@ -43,8 +43,9 @@
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
-
-        >&#9776;</button>
+        >
+          &#9776;
+        </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -511,7 +512,12 @@
             </div>
             <div>
               <label for="telUsuario">Teléfono</label>
-              <input type="tel" id="telUsuario" name="telUsuarioIngresado" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" />
+              <input
+                type="tel"
+                id="telUsuario"
+                name="telUsuarioIngresado"
+                onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"
+              />
             </div>
             <div>
               <label for="paisUsuario">País de residencia</label>

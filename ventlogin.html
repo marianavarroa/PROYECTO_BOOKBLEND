@@ -1,99 +1,141 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./imagenes/LOGOFAVICO.ico" type="image/x-icon" />
+    <title>Book Blend - Suscripción e Inicio de Sesión</title>
+    <link rel="stylesheet" href="./CSS/stylePagina.css" />
+  </head>
 
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-      <link rel="icon" href="./imagenes/LOGOFAVICO.ico" type="image/x-icon">
-      <title>Book Blend - Suscripción e Inicio de Sesión</title>
-      <link rel="stylesheet" href="./CSS/stylePagina.css">
-    </head>
-
-    <body>
-      <header>
-        <a href="/index.html"><h1>Book Blend</h1></a>
-      </header>
-      <main>
-        <section id="suscripcion">
-          <section id="contacto">
-            <h2>Suscripción</h2>
-            <div class="container">
-              <form id="form-suscripcion">
-                <div>
-                  <label for="nombre">Nombre y apellido:</label>
-                  <input type="text" id="nombreSuscriptor" name="nombreSuscriptorIngresado" required>
-                </div>
-                <div>
-                  <label for="email">E-mail:</label><br>
-                  <input type="email" id="emailSuscriptor" name="emailSuscriptor" required><br>
-                </div>
-                <div>
-                  <label for="tarjeta">Número de tarjeta:</label><br>
-                  <input type="text" id="tarjetaSuscritor" name="tarjetaSuscriptor" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" required><br><br>
-                </div>
-                <div>
-                  <label for="plan">Selecciona un plan:</label><br>
-                  <select id="plan" name="plan" required>
-                    <option value="selected">Selecciona un plan</option>
-                    <option value="basico">Plan Básico - $9.99/mes</option>
-                    <option value="estandar">Plan Estándar - $19.99/mes</option>
-                    <option value="premium">Plan Premium - $29.99/mes</option>
-                  </select><br><br>
-                </div>
-                <div>
-                  <input type="checkbox" id="politicasdeprivacidad" name="politicasdeprivacidad" value="1">
-                  <label for="politicasdeprivacidad"> Acepto la<a href="./politicasdeprivacidad.html">Política
-                      de privacidad</a>de esta web.
-                  </label>
-                </div>
-                <input type="submit" value="SUSCRIBIRSE">
-              </form>
-            </div>
-          </section>
-        </section>
-        <section id="inicio-sesion">
-          <h2>Iniciar Sesión</h2>
+  <body>
+    <header>
+      <a href="/index.html"><h1>Book Blend</h1></a>
+    </header>
+    <main>
+      <section id="suscripcion">
+        <section id="contacto">
+          <h2>Suscripción</h2>
           <div class="container">
-            <form id="form-login">
+            <form id="form-suscripcion">
               <div>
-                <label for="email_login">E-mail:</label><br>
-                <input type="email" id="email_login" name="email_login" required><br>
+                <label for="nombre">Nombre y apellido:</label>
+                <input
+                  type="text"
+                  id="nombreSuscriptor"
+                  name="nombreSuscriptorIngresado"
+                  required
+                />
               </div>
               <div>
-                <label for="password">Contraseña:</label><br>
-                <input type="password" id="password" name="password" required><br><br>
+                <label for="email">E-mail:</label><br />
+                <input
+                  type="email"
+                  id="emailSuscriptor"
+                  name="emailSuscriptor"
+                  required
+                /><br />
               </div>
-              <input type="submit" value="Iniciar Sesión">
+              <div>
+                <label for="tarjeta">Número de tarjeta:</label><br />
+                <input
+                  type="text"
+                  id="tarjetaSuscritor"
+                  name="tarjetaSuscriptor"
+                  onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"
+                  required
+                /><br /><br />
+              </div>
+              <div>
+                <label for="plan">Selecciona un plan:</label><br />
+                <select id="plan" name="plan" required>
+                  <option value="selected">Selecciona un plan</option>
+                  <option value="basico">Plan Básico - $9.99/mes</option>
+                  <option value="estandar">Plan Estándar - $19.99/mes</option>
+                  <option value="premium">
+                    Plan Premium - $29.99/mes
+                  </option></select
+                ><br /><br />
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="politicasdeprivacidad"
+                  name="politicasdeprivacidad"
+                  value="1"
+                />
+                <label for="politicasdeprivacidad">
+                  Acepto la<a href="./politicasdeprivacidad.html"
+                    >Política de privacidad</a
+                  >de esta web.
+                </label>
+              </div>
+              <input type="submit" value="SUSCRIBIRSE" />
             </form>
           </div>
         </section>
-      </main>
-      <footer>
+      </section>
+      <section id="inicio-sesion">
+        <h2>Iniciar Sesión</h2>
         <div class="container">
-          <div class="logoFooter">
-            <img src="./imagenes/logo1.png" alt="" />
-          </div>
-          <div class="accesoRapido">
-            <ul>
-              <li><a href="./index.html">Inicio</a></li>
-              <li><a href="./terminosycondiciones.html">Términos y condiciones</a></li>
-              <li><a href="index.html#contacto">Contacto</a></li>
-            </ul>
-          </div>
-          <div class="logoRedes">
-            <a href="https://www.facebook.com/" target="_blank">
-              <img src="./imagenes/facebooklogo.jpg" alt="FacebookLogo" /></a>
-            <a href="https://www.instagram.com/" target="_blank">
-              <img src="./imagenes/instagramlogo.jpg" alt="InstagramLogo" /></a>
-            <a href="https://twitter.com/" target="_blank">
-              <img src="./imagenes/twitterlogo.jpg" alt="TwitterLogo" /></a>
-          </div>
-          <p class="copy">
-            Book Blend Copyright &copy; 2023. All Rights Reserved.
-          </p>
+          <form id="form-login">
+            <div>
+              <label for="email_login">E-mail:</label><br />
+              <input
+                type="email"
+                id="email_login"
+                name="email_login"
+                required
+              /><br />
+            </div>
+            <div>
+              <label for="password">Contraseña:</label><br />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+              /><br /><br />
+            </div>
+            <input type="submit" value="Iniciar Sesión" />
+          </form>
         </div>
-      </footer>
-      <script src="./JS/suscripcion.js"></script>
-    </body>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="logoFooter">
+          <img src="./imagenes/logo1.png" alt="" />
+        </div>
+        <div class="accesoRapido">
+          <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li>
+              <a href="./terminosycondiciones.html">Términos y condiciones</a>
+            </li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="logoRedes">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="./imagenes/facebooklogo.jpg" alt="FacebookLogo"
+          /></a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="./imagenes/instagramlogo.jpg" alt="InstagramLogo"
+          /></a>
+          <a href="https://twitter.com/" target="_blank">
+            <img src="./imagenes/twitterlogo.jpg" alt="TwitterLogo"
+          /></a>
+        </div>
+        <p class="copy">
+          Book Blend Copyright &copy; 2023. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="./JS/suscripcion.js"></script>
+  </body>
 </html>
