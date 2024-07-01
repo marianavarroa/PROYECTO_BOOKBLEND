@@ -9,19 +9,19 @@ document.addEventListener('DOMContentLoaded', () => {
         //luego cambiaremos la url por https://<hostdepanywhere>/usuarios
         const response = await fetch('http://127.0.0.1:5000/usuarios');// promesa: esperar a que se complete la solicitud HTTP
         const usuarios = await response.json(); //esperar a que se complete la conversión de la respuesta a JSON
-        form.innerHTML = '';
+        // form.innerHTML = ''; (estaba borrando el div id perfil por eso lo comente)
         usuarios.forEach(usuario => {
-            const row = document.createElement('tr');
+            const row = document.createElement('ul');
             row.innerHTML = `
-                <td>${usuario.id}</td>
-                <td>${usuario.nombre_apellido}</td>
-                <td>${usuario.mail}</td>
-                <td>${usuario.tarjeta}</td>
-                <td>${usuario.plan}</td>
-                <td>
+                <li>${usuario.id}</li>
+                <li>${usuario.nombre_apellido}</li>
+                <li>${usuario.mail}</li>
+                <li>${usuario.tarjeta}</li>
+                <li>${usuario.plan}</li>
+                <li>
                     <button onclick="editUsuario(${usuario.id}, '${usuario.nombre_apellido}', ${usuario.mail}, ${usuario.tarjeta}, ${usuario.plan})">Editar</button>
                     <button onclick="deleteUsuario(${usuario.id})">Eliminar</button>
-                </td>
+                </li>
             `;
             // tableBody.appendChild(row);
         });
@@ -93,3 +93,31 @@ document.addEventListener('DOMContentLoaded', () => {
 
     fetchusuarios();
 });
+
+
+
+document.getElementById('formActualizar').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevenir el envío del formulario por defecto
+
+    var form = event.target;
+    var data = new FormData(form);
+    var jsonData = {};
+    data.forEach((value, key) => { jsonData[key] = value });
+
+    fetch('/http://127.0.0.1:5500/agregar_usuario', {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(jsonData)
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Éxito:', data);
+      alert('Datos actualizados correctamente');
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+      alert('Hubo un error al actualizar los datos');
+    });
+  });
