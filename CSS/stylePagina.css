@@ -102,6 +102,7 @@ div.container {
   width: 100%;
   max-width: 2000px;
   margin: 0 auto;
+  margin-top: 10vh;
 }
 
 nav ul {
@@ -914,4 +915,27 @@ h4 {/* todos los textos h4 */
   .libros_anteriores{
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+}
+
+.container-in {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 12px #aaa;
+  background-color: #f9f9f9;
+  margin: 5% auto;
+}
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+button.delete-account {
+  background-color: red;
+  color: white;
 }

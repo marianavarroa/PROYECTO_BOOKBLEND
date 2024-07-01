@@ -1,119 +1,102 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-  <link rel="icon" href="./imagenes/LOGOFAVICO.ico" type="image/x-icon">
-  <title>Book Blend - User Dashboard</title>
-  <link rel="stylesheet" href="./CSS/stylePagina.css">
-  <style>
-    .container {
-      width: 50%;
-      margin: auto;
-      padding: 20px;
-      border: 1px solid #ccc;
-      box-shadow: 2px 2px 12px #aaa;
-      background-color: #f9f9f9;
-    }
-    label {
-      display: block;
-      margin: 10px 0 5px;
-    }
-    input, button {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-    }
-    button.delete-account {
-      background-color: red;
-      color: white;
-    }
-  </style> 
-</head>
-
-<body>
-  <header>
-    <a href="#"><h1>Perfil usuario</h1></a>
-  </header>
-  <main>
-    <div>
-        <ol id="perfil">
-            <li>Nombre y apellido:</li>
-            <li>Mail</li>
-            <li>Tarjeta</li>
-            <li>Plan</li>
-        </ol>
-    </div>
-    <div class="container">
-      <form action="update_user.php" method="post">
-        <div>
-          <label for="uname">Nombre y apellido:</label>
-          <input type="text" id="uname" name="uname" required>
-        </div>
-        <div>
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div>
-            <label for="tarjetaSuscriptor">Numero de tarjeta:</label>
-            <input type="text" id="tarjetaSuscriptor" name="tarjetaSuscriptor" required>
-          </div>
-        <div>
-          <label for="plan">Plan:</label>
-          <input type="select" id="plan" name="plan" required>
-        </div>
-        <button type="submit">Actualizar</button>
-      </form>
-      <form action="delete_user.php" method="post" style="margin-top: 20px;">
-        <button type="submit" class="delete-account">Eliminar Cuenta</button>
-      </form>
-    </div>
-  </main>
-  <footer>
-    <div class="container">
-      <div class="logoFooter">
-        <img src="./imagenes/logo1.png" alt="logo de bookblent" />
-      </div>
-      <div class="accesoRapido">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./imagenes/LOGOFAVICO.ico" type="image/x-icon" />
+    <title>Book Blend - User Dashboard</title>
+    <link rel="stylesheet" href="./CSS/stylePagina.css" />
+  </head>
+  <body>
+    <header>
+      <a href="#"><h1>Perfil usuario</h1></a>
+    </header>
+    <main>
+      <div id="profile">
         <ul>
-          <li><a href="./index.html">Inicio</a></li>
-          <li>
-            <a href="./terminosycondiciones.html">Términos y condiciones</a>
-          </li>
-          <li><a href="./index.html#contacto">Contacto</a></li>
+          <li>Nombre:(contenido)</li>
+          <li>Email:(contenido)</li>
+          <li>Tarjeta:(contenido)</li>
+          <li>Plan:(contenido)</li>
         </ul>
       </div>
-      <div class="logoRedes">
-        <a href="https://www.facebook.com/" target="_blank">
-          <img src="./imagenes/facebooklogo.jpg" alt="FacebookLogo" />
-        </a>
-        <a href="https://www.instagram.com/" target="_blank">
-          <img src="./imagenes/instagramlogo.jpg" alt="InstagramLogo" />
-        </a>
-        <a href="https://twitter.com/" target="_blank">
-          <img src="./imagenes/twitterlogo.jpg" alt="TwitterLogo" />
-        </a>
+      <div class="container">
+        <form action="update_user.php" method="post">
+          <div>
+            <label for="uname">Nombre y apellido:</label>
+            <input type="text" id="uname" name="uname" required />
+          </div>
+          <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="tarjetaSuscriptor">Numero de tarjeta:</label>
+            <input
+              type="text"
+              id="tarjetaSuscriptor"
+              name="tarjetaSuscriptor"
+              required
+            />
+          </div>
+          <div>
+            <label for="plan">Plan:</label>
+            <input type="select" id="plan" name="plan" required />
+          </div>
+          <button type="submit">Actualizar</button>
+        </form>
+        <form action="delete_user.php" method="post" style="margin-top: 20px">
+          <button type="submit" class="delete-account">Eliminar Cuenta</button>
+        </form>
       </div>
-      <p class="copy">
-        Book Blend Copyright &copy; 2024. All Rights Reserved.
-      </p>
-    </div>
-  </footer>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
-  ></script>
-  <script src="./JS/popup.js"></script>
-  <script src="./JS/formulario.js"></script>
-  <script src="./JS/scroll.js"></script>
-  <script src="./JS/inse.js"></script>
-  <script src="./JS/carrusel.js"></script>
-  <script src="./JS/acordeon.js"></script>
-  <script src="./JS/script.js"></script>
-</body>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="logoFooter">
+          <img src="./imagenes/logo1.png" alt="logo de bookblent" />
+        </div>
+        <div class="accesoRapido">
+          <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li>
+              <a href="./terminosycondiciones.html">Términos y condiciones</a>
+            </li>
+            <li><a href="./index.html#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="logoRedes">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="./imagenes/facebooklogo.jpg" alt="FacebookLogo" />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="./imagenes/instagramlogo.jpg" alt="InstagramLogo" />
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <img src="./imagenes/twitterlogo.jpg" alt="TwitterLogo" />
+          </a>
+        </div>
+        <p class="copy">
+          Book Blend Copyright &copy; 2024. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./JS/popup.js"></script>
+    <script src="./JS/formulario.js"></script>
+    <script src="./JS/scroll.js"></script>
+    <script src="./JS/inse.js"></script>
+    <script src="./JS/carrusel.js"></script>
+    <script src="./JS/acordeon.js"></script>
+    <script src="./JS/script.js"></script>
+  </body>
 </html>
 <!-- <!DOCTYPE html>
 <html lang="es">
