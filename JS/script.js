@@ -11,19 +11,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const usuarios = await response.json(); //esperar a que se complete la conversión de la respuesta a JSON
         // form.innerHTML = ''; (estaba borrando el div id perfil por eso lo comente)
         usuarios.forEach(usuario => {
-            const row = document.createElement('ul');
+            const row = document.createElement('td');
             row.innerHTML = `
-                <li>${usuario.id}</li>
-                <li>${usuario.nombre_apellido}</li>
-                <li>${usuario.mail}</li>
-                <li>${usuario.tarjeta}</li>
-                <li>${usuario.plan}</li>
-                <li>
-                    <button onclick="editUsuario(${usuario.id}, '${usuario.nombre_apellido}', ${usuario.mail}, ${usuario.tarjeta}, ${usuario.plan})">Editar</button>
+                <th>${usuario.id}</th>
+                <th>${usuario.nombre_apellido}</th>
+                <th>${usuario.mail}</th>
+                <th>${usuario.tarjeta}</th>
+                <th>${usuario.plan}</th>
+                <th>
+                    <button onclick="editUsuario(${usuario.id}, '${usuario.nombre_apellido}', '${usuario.mail}', '${usuario.tarjeta}', '${usuario.plan}')">Editar</button>
                     <button onclick="deleteUsuario(${usuario.id})">Eliminar</button>
-                </li>
+                </th>
             `;
-            // tableBody.appendChild(row);
+            tableBody.appendChild(row);
         });
     };
 
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const updateUsuario = async (id, usuario) => {
-        await fetch(`http://127.0.0.1:5000/actualizar_usuario/${id}`, {
+        await fetch('http://127.0.0.1:5000/actualizar_usuario/${id}', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const deleteUsuario = async (id) => {
-        await fetch(`http://127.0.0.1:5000/eliminar_usuario/${id}`, {
+        await fetch('http://127.0.0.1:5000/eliminar_usuario/${id}', {
             method: 'DELETE'
         });
         fetchusuarios();
@@ -104,7 +104,7 @@ document.getElementById('formActualizar').addEventListener('submit', function(ev
     var jsonData = {};
     data.forEach((value, key) => { jsonData[key] = value });
 
-    fetch('/http://127.0.0.1:5500/agregar_usuario', {
+    fetch('/http://127.0.0.1:5000/agregar_usuario', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'

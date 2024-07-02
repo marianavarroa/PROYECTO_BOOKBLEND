@@ -96,36 +96,36 @@ if __name__ == '__main__':
 
 
 
-from flask import Flask, jsonify
-import mysql.connector
-from flask_cors import CORS 
+# from flask import Flask, jsonify
+# import mysql.connector
+# from flask_cors import CORS 
 
-app = Flask(__name__)
-CORS(app)
+# app = Flask(__name__)
+# CORS(app)
 
-# #get -> consultar
-# #post -> crear un nuevo elemento en el servidor
-# #delete -> eliminar
-# #put -> actualizar
+# # #get -> consultar
+# # #post -> crear un nuevo elemento en el servidor
+# # #delete -> eliminar
+# # #put -> actualizar
 
-# #consultar
-@app.route('/usuarios', methods=['GET'])
-def ver_usuarios():
-     db = mysql.connector.connect(
-         host='localhost',
-         user='root', #mi usuario
-         password='12345', #mi contraseña
-         database='comercio' #nombre de la base de datos
-     )
+# # #consultar
+# @app.route('/usuarios', methods=['GET'])
+# def ver_usuarios():
+#      db = mysql.connector.connect(
+#          host='localhost',
+#          user='root', #mi usuario
+#          password='12345', #mi contraseña
+#          database='suscripciones' #nombre de la base de datos
+#      )
     
-     cursor = db.cursor(dictionary=True) #en lugar de tener una lista con tuplas, tener un diccionario con clave(campo) y valor(dato)
-     cursor.execute("SELECT * FROM usuarios")
+#      cursor = db.cursor(dictionary=True) #en lugar de tener una lista con tuplas, tener un diccionario con clave(campo) y valor(dato)
+#      cursor.execute("SELECT * FROM usuarios")
     
-     usuarios = cursor.fetchall()
+#      usuarios = cursor.fetchall()
     
-     cursor.close()
-     return jsonify(usuarios) #generamos un json como respuesta
+#      cursor.close()
+#      return jsonify(usuarios) #generamos un json como respuesta
     
-if __name__ == '__main__':
-     app.run(debug=True) 
+# if __name__ == '__main__':
+#      app.run(debug=True) 
 
