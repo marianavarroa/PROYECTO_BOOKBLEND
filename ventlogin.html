@@ -11,7 +11,6 @@
     <title>Book Blend - Suscripción e Inicio de Sesión</title>
     <link rel="stylesheet" href="./CSS/stylePagina.css" />
   </head>
-
   <body>
     <header>
       <a href="/index.html"><h1>Book Blend</h1></a>
@@ -23,35 +22,35 @@
           <div class="container">
             <form id="form-suscripcion">
               <div>
-                <label for="nombre">Nombre y apellido:</label>
+                <label for="nombre_apellido">Nombre y apellido:</label>
                 <input
                   type="text"
-                  id="nombreSuscriptor"
-                  name="nombreSuscriptorIngresado"
+                  id="nombre_apellido"
+                  name="nombre_apellido"
                   required
                 />
               </div>
               <div>
-                <label for="email">E-mail:</label><br />
+                <label for="mail">E-mail:</label><br/>
                 <input
                   type="email"
-                  id="emailSuscriptor"
-                  name="emailSuscriptor"
+                  id="mail"
+                  name="mail"
                   required
                 /><br />
               </div>
               <div>
-                <label for="tarjeta">Número de tarjeta:</label><br />
+                <label for="tarjeta">Número de tarjeta:</label><br/>
                 <input
                   type="text"
-                  id="tarjetaSuscritor"
-                  name="tarjetaSuscriptor"
+                  id="tarjeta"
+                  name="tarjeta"
                   onkeypress="return (event.charCode >= 48 && event.charCode <= 57)"
                   required
-                /><br /><br />
+                /><br/><br/>
               </div>
               <div>
-                <label for="plan">Selecciona un plan:</label><br />
+                <label for="plan">Selecciona un plan:</label><br/>
                 <select id="plan" name="plan" required>
                   <option value="selected">Selecciona un plan</option>
                   <option value="basico">Plan Básico - $9.99/mes</option>
@@ -59,7 +58,7 @@
                   <option value="premium">
                     Plan Premium - $29.99/mes
                   </option></select
-                ><br /><br />
+                ><br/><br/>
               </div>
               <div>
                 <input
@@ -103,6 +102,7 @@
             </div>
             <input type="submit" value="Iniciar Sesión" />
           </form>
+          <a href="carga.html">Soy administrador</a>
         </div>
       </section>
     </main>
