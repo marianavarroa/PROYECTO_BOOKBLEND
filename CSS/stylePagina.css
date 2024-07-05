@@ -947,14 +947,17 @@ height: 30vh;
 
 table {
   width: 100%;
-  border-collapse: collapse;
+  /* border-collapse: collapse; */
+  
 }
 table, th, td {
-  border: 1px solid rgb(136, 39, 39);
+  border: 1px solid #1ab4bc7e;
+  
 }
 th, td {
   padding: 8px;
   text-align: left;
+  
 }
 th {
   background-color: #f2f2f2;
