@@ -3,7 +3,7 @@ import mysql.connector
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["http://127.0.0.1:5500"])
 
 
 #get 
@@ -56,7 +56,7 @@ def crear_libro():
     )
 
     cursor = db.cursor()
-    cursor.execute("INSERT INTO libros(nombre,autor,editorial,edicion) VALUES(%s,%s,%s,%s)", (info["nombre"],info["autor"],info["editorial"],info["edicion"])) #("monitor", 45 , 100500)
+    cursor.execute("INSERT INTO libros(nombre,autor,editorial,edicion) VALUES(%s,%s,%s,%s)", (info["nombre"],info["autor"],info["editorial"],info["edicion"])) 
 
     db.commit()
     cursor.close()

@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td>${libro.editorial}</td>
                 <td>${libro.edicion}</td>
                 <td>
-                    <button onclick="editLibro(${libro.id}, '${libro.nombre}', ${libro.autor}, ${libro.editorial}, ${libro.edicion})">Editar</button>
+                    <button onclick="editLibro(${libro.id}, '${libro.nombre}','${libro.autor}', '${libro.editorial}', ${libro.edicion})">Editar</button>
                     <button onclick="deleteLibro(${libro.id})">Eliminar</button>
                 </td>
             `;
