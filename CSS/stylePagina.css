@@ -944,3 +944,27 @@ button.delete-account {
 padding: 30vh;
 height: 30vh;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table, th, td {
+  border: 1px solid rgb(136, 39, 39);
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+
+#bodyCarga{
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+#librosForm{
+  margin-bottom: 20px;
+}
