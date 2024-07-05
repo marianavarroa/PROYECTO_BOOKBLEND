@@ -971,3 +971,8 @@ th {
 #librosForm{
   margin-bottom: 20px;
 }
+
+#buttGuardar{
+  font-weight: bold;
+  font-size: medium;
+}
